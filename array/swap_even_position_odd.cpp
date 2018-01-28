@@ -1,0 +1,1 @@
+ #include<iostream> #include<conio.h> using namespace std; int main() { int x[10],i,temp; for(i=0;i<10;i++) { cout<<"\n Enter any no :"; cin>>x[i]; } for(i=0;i<10;i+=2) { temp = x[i]; x[i]= x[i+1]; x[i+1]= temp; } cout<<"\n Swapped Array : "; for(i=0;i<10;i++) cout<<x[i]<<" "; } 

@@ -1,0 +1,1 @@
+ #include<fstream> #include<iostream> using namespace std; int main() { ifstream fin("single.php"); ofstream fout("compressed.php"); char ch; int count=0; while(fin.get(ch)) { if(ch=='\t'||ch=='\n'||ch=='\r') ch =' '; if(ch==' ') count++; else count=0; if(count<=1) fout<<ch; } fin.close(); fout.close(); cout<<"\n Compression complete..."; return 0; } 

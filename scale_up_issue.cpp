@@ -1,0 +1,1 @@
+ #include<iostream> using namespace std; int main() { int m,n,k; int i,j,l,a; cout<<"\n Enter value of m,n,k :"; cin>>m>>n>>k; char str[m][1000]; for(int i=0;i<m;i++) { fflush(stdin); cin.getline(str[i],1000); } for(i=0;i<n;i++) { for(a=0;a<n;a++) { for(j=0;j<=m;j++) for(l=0;l<k;l++) cout<<str[i][j]; cout<<endl; } } return 0; } 

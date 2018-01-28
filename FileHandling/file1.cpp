@@ -1,0 +1,1 @@
+#include<fstream> using namespace std; int main() { ofstream fout; fout.open("abc.txt",ios::app); fout<<"\n Hello class\t\n\n\n\n XII this is rakesh"; fout.close(); return 0; } 

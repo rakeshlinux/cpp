@@ -1,0 +1,1 @@
+#include<fstream> #include<iostream> using namespace std; int main() { char word[100]; int count =0; ifstream fin; fin.open("arjun.txt"); while(!fin.eof()) { fin>>word; count++; } cout<<"\n Total words :"<<count; fin.close(); return 0; } 

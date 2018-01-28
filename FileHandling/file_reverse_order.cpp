@@ -1,0 +1,1 @@
+ #include<fstream> #include<iostream> #include<string.h> using namespace std; int main() { ifstream fin("file_reverse_order.cpp"); char ch; int j=0; char str[100]; while(!fin.eof()) { fin.get(ch); if(ch==' '|| ch=='\n'||ch=='\r'||ch=='\t'||ch==',') { str[j]='\0';cout<<strrev(str);cout<<ch;j=0;} else str[j++]=ch; } fin.close(); return 0; } 

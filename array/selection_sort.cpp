@@ -1,0 +1,1 @@
+ #include<iostream> #include<conio.h> using namespace std; int main() { int x[10],i,j,temp,low,pos; for(i=0;i<10;i++) { cout<<"\n Enter any no :"; cin>>x[i]; } for(i=0;i<9;i++) { low=x[i]; pos =i; for(j=i+1;j<10;j++) if( low>x[j]) { low=x[j]; pos =j; } temp = x[pos]; x[pos]= x[i]; x[i]= temp; } cout<<"\n Soreted Array : "; for(i=0;i<10;i++) cout<<x[i]<<" "; } 

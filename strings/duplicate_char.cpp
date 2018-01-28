@@ -1,0 +1,1 @@
+ #include<iostream> #include<string.h> using namespace std; int main() { char str[1000]; char ch; int i,j; int valid =1; cout<<"\n Enter any string : "; cin.getline(str,1000); for(i=0;i<strlen(str);i++) { for(j=i+1;j<=strlen(str);j++) if(str[i]==str[j]) valid = 0; } if(valid ==0) cout<<"\n String has duplicate chars"; else cout<<"\n Does not have duplicate chars"; return 0; } 

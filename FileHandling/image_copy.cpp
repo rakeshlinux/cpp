@@ -1,0 +1,1 @@
+ #include<iostream> #include<conio.h> using namespace std; int main() { ifsrteam fin("source.jpg"); ofstream fout("destination.jpg"); fin return 0; } 

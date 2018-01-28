@@ -1,0 +1,1 @@
+ #include<iostream> #include<conio.h> using namespace std; int main() { int n, bin[100]; bin[0]=-1; int rem,i=0; cout<<"\n Enter any number : "; cin>>n; while(n!=0) { rem = n%2; bin[i++]=rem; n = int(n/2); } cout<<"\n Binary No. : "; for(i=i-1;i>=0;i--) cout<<bin[i]; return 0; } 

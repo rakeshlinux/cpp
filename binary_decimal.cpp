@@ -1,0 +1,1 @@
+ #include<iostream> #include<math.h> #include<conio.h> using namespace std; int main(){ int n,i=0,sum=0; int rem; cout<<"\n Enter any binary number : "; cin>>n; while(n!=0) { rem = n%10; sum = sum + rem* pow(2,i); n = int(n/10); i++; } cout<<"\n Decimal No :"<<sum; } 

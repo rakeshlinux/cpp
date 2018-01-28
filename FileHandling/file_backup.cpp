@@ -1,0 +1,1 @@
+#include<fstream> #include<iostream> using namespace std; int main() { char ch; ifstream fin; ofstream fout; fin.open("abc.txt"); fout.open("backup.txt"); while(!fin.eof()) { fin.get(ch); fout<<ch; } fin.close(); fout.close(); cout<<"\n Backup Complete...."; return 0; } 

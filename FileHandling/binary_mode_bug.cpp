@@ -1,0 +1,1 @@
+ #include<fstream> #include<iostream> using namespace std; struct student{ int roll; char name[30]; char address[80]; }; int main() { ofstream fout("student.dat",ios::app); student s; cout<<"\n Enter roll no :"; cin>>s.roll; cout<<"\n Enter name : "; cin>>s.name; cout<<"\n Enter address :"; cin>>s.address; fout.write((char*)&s, sizeof(student)); fout.close(); return 0; } 

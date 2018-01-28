@@ -1,0 +1,1 @@
+ #include<iostream> #include<iomanip> using namespace std; int main(){ int i,j,k,m,n; cout<<"\n Enter any No : "; cin>>n; for(i=1;i<=n;i++) { if(i%2==0) m=n-1; else m=n-i; for(j=1;j<=m;j++) cout<<setw(3)<<" "; for(k=1;k<=i;k++) cout<<setw(3)<<k; cout<<endl; } return 0; } 
